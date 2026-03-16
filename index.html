@@ -1,745 +1,927 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Speed Stars MOD – Insane Speed Glitch | iOS & Android</title>
-  <meta name="description" content="Download Speed Stars MOD APK/IPA: Activate the insane speed glitch seen on TikTok! Your runner moves so fast the AI can't keep up. 100% working.">
-  <meta name="keywords" content="Speed Stars MOD, Speed Stars hack, speed glitch, fast runner, iOS mod, Android APK, Miniclip">
+  <meta charset="UTF-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Title -->
+  <title>Speed Stars MOD for Ios and Android - Unlimited diamonds & Features</title>
+
+  <!-- Description -->
+  <meta name="description" content="Download the latest version of Speed Stars MOD for Ios and Android with unlimited diamonds, unlocked features, and no ads. Compatible with Android and iOS."/>
+
+  <!-- Keywords (for SEO) -->
+  <meta name="keywords" content="Speed Stars MOD, Speed Stars Hack, Unlimited diamonds, No Ads, Android, iOS, Download Free"/>
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Speed Stars MOD - Unlimited diamonds & Features">
+  <meta property="og:description" content="Download the latest version of Speed Stars MOD with unlimited diamonds, unlocked features, and no ads. Compatible with Android and iOS.">
+  <meta property="og:image" content="https://gazaki.com/images/speed_stars.jpg">
+  <meta property="og:url" content="https://gazaki.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Speed Stars MOD - Unlimited diamonds & Features">
+  <meta name="twitter:description" content="Download the latest version of Speed Stars MOD with unlimited diamonds, unlocked features, and no ads. Compatible with Android and iOS.">
+  <meta name="twitter:image" content="https://gazaki.com/images/speed_stars.jpg">
+
+  <!-- Author -->
+  <meta name="author" content="SpeedStarsMOD">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./images/speed_stars.jpg" type="image/x-icon">
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#111">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <style>
     :root {
-      --bg: #06080f;
-      --surface: #0c1220;
-      --card: #0e1628;
-      --border: #1c2d4a;
-      --yellow: #ffe600;
-      --yellow2: #ffb800;
-      --cyan: #00f0ff;
-      --red: #ff2d55;
-      --text: #e8f0ff;
-      --muted: #6080a0;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); overflow-x: hidden; }
-
-    /* ── SCANLINE overlay ── */
-    body::after {
-      content: '';
-      position: fixed; inset: 0;
-      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.06) 2px, rgba(0,0,0,.06) 4px);
-      pointer-events: none; z-index: 9999;
+      --primary: #16a34a;
+      --primary-dark: #074920;
+      --primary-light: #22c55e;
+      --secondary: #3b82f6;
+      --danger: #ef4444;
+      --dark: #0f172a;
+      --darker: #020617;
+      --light: #f8fafc;
+      --gray: #94a3b8;
+      --dark-gray: #1e293b;
     }
 
-    /* ── TRACK LINES bg ── */
-    .track-bg {
-      position: fixed; inset: 0; z-index: 0;
-      background:
-        linear-gradient(var(--bg) 0%, transparent 25%, transparent 75%, var(--bg) 100%),
-        repeating-linear-gradient(90deg,
-          transparent 0px, transparent 118px,
-          rgba(255,230,0,.04) 118px, rgba(255,230,0,.04) 120px);
-      pointer-events: none;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    /* ── NAV ── */
-    nav {
-      position: sticky; top: 0; z-index: 100;
-      background: rgba(6,8,15,.9);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border);
-      padding: 0 20px;
-      height: 54px;
-      display: flex; align-items: center; justify-content: space-between;
+    html, body {
+      height: 100%;
+      scroll-behavior: smooth;
     }
-    .nav-logo {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 22px; letter-spacing: 2px;
-      color: var(--yellow);
-      text-decoration: none;
-      display: flex; align-items: center; gap: 8px;
-    }
-    .nav-logo span { color: #fff; }
-    .nav-badge {
-      background: var(--red);
-      color: #fff;
-      font-size: 10px; font-weight: 800;
-      padding: 3px 10px; border-radius: 100px;
-      text-transform: uppercase; letter-spacing: .08em;
-      animation: pulse-badge 1.5s ease-in-out infinite;
-    }
-    @keyframes pulse-badge { 0%,100%{opacity:1} 50%{opacity:.6} }
 
-    /* ── HERO ── */
-    .hero {
-      position: relative; z-index: 1;
-      padding: 60px 20px 40px;
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--dark);
+      color: white;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      background-image: radial-gradient(circle at 50% 50%, var(--darker) 0%, var(--dark) 100%);
+    }
+
+    h1, h2, h3, h4 {
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 0.5em;
+    }
+
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      color: var(--light);
+    }
+
+    header {
+      background-color: var(--dark-gray);
+      padding: 20px;
       text-align: center;
-      overflow: hidden;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
     }
-    .hero-glow {
-      position: absolute; top: -120px; left: 50%; transform: translateX(-50%);
-      width: 600px; height: 600px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(255,230,0,.08) 0%, transparent 70%);
-      pointer-events: none;
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      flex: 1;
     }
-    .hero-eyebrow {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(255,230,0,.08);
-      border: 1px solid rgba(255,230,0,.25);
-      border-radius: 100px; padding: 6px 18px;
-      font-size: 11px; font-weight: 800; color: var(--yellow);
-      letter-spacing: .12em; text-transform: uppercase;
+
+    /* Trust Badges */
+    .trust-badges {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
       margin-bottom: 20px;
     }
-    .hero-eyebrow .dot {
-      width: 7px; height: 7px; border-radius: 50%;
-      background: var(--yellow);
-      box-shadow: 0 0 8px var(--yellow);
-      animation: pulse-badge 1.2s ease-in-out infinite;
+
+    .badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.05);
+      padding: 10px 15px;
+      border-radius: 50px;
+      font-size: clamp(0.8rem, 2vw, 0.95rem);
+      border: 1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(5px);
+      flex: 1 0 auto;
+      min-width: fit-content;
     }
-    .hero h1 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(48px, 12vw, 100px);
-      line-height: .9;
-      letter-spacing: 2px;
+
+    .badge img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+
+    /* App Card */
+    .app-card {
+      background-color: var(--dark-gray);
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255,255,255,0.05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .app-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(22,163,74,0.1) 0%, transparent 70%);
+      z-index: 0;
+    }
+
+    .app-card > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .app-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      border: 3px solid rgba(255,255,255,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .app-card img:hover {
+      transform: scale(1.03);
+    }
+
+    .app-card p {
+      color: var(--gray);
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      margin-bottom: 20px;
+      max-width: 700px;
+    }
+
+    /* Rating */
+    .rating {
+      color: gold;
+      font-weight: 600;
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    /* Features List */
+    .features {
+      margin: 20px 0;
+      text-align: left;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .features li {
+      list-style: none;
+      margin-bottom: 10px;
+      color: var(--primary-light);
+      font-weight: 500;
+      padding-left: 30px;
+      position: relative;
+      font-size: clamp(0.9rem, 2vw, 1rem);
+    }
+
+    .features li::before {
+      content: '\f00c';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      color: var(--primary-light);
+    }
+
+    /* Download Buttons */
+    .download-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px 0;
+      width: 100%;
+    }
+
+    .download-btn {
+      background-color: var(--primary-dark);
+      padding: 12px 20px;
+      border-radius: 8px;
+      color: white;
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      min-width: 200px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(22, 163, 74, 0.3);
+      flex: 1 1 auto;
+    }
+
+    .download-btn i {
+      font-size: 1.1rem;
+    }
+
+    .download-btn:hover {
+      background-color: var(--primary);
+      transform: translateY(-3px);
+      box-shadow: 0 7px 20px rgba(22, 163, 74, 0.4);
+    }
+
+    .download-btn:active {
+      transform: translateY(1px);
+    }
+
+    .iphone {
+      background-color: var(--secondary);
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    }
+
+    .iphone:hover {
+      background-color: #2563eb;
+      box-shadow: 0 7px 20px rgba(59, 130, 246, 0.4);
+    }
+
+    .android {
+      background-color: var(--danger);
+      box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+    }
+
+    .android:hover {
+      background-color: #dc2626;
+      box-shadow: 0 7px 20px rgba(239, 68, 68, 0.4);
+    }
+
+    .another-color {
+      background-color: #7c3aed;
+      box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+    }
+
+    .another-color:hover {
+      background-color: #6d28d9;
+      box-shadow: 0 7px 20px rgba(124, 58, 237, 0.4);
+    }
+
+    /* Live Counter */
+    .live-counter {
+      margin: 15px 0;
+      padding: 10px;
+      background: rgba(22, 163, 74, 0.1);
+      border-radius: 8px;
+      font-size: clamp(0.85rem, 2vw, 1rem);
+      border: 1px solid rgba(22, 163, 74, 0.3);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .live-counter .pulse {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--primary);
+      box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.7);
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.7);
+      }
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(22, 163, 74, 0);
+      }
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(22, 163, 74, 0);
+      }
+    }
+
+    /* Testimonials */
+    .testimonials {
+      display: flex;
+      gap: 15px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .testimonial {
+      background: rgba(255,255,255,0.05);
+      padding: 15px;
+      border-radius: 12px;
+      max-width: 300px;
+      text-align: left;
+      border: 1px solid rgba(255,255,255,0.1);
+      flex: 1 1 300px;
+    }
+
+    .testimonial-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
       margin-bottom: 8px;
     }
-    .hero h1 .line1 { color: #fff; display: block; }
-    .hero h1 .line2 {
-      display: block;
-      background: linear-gradient(90deg, var(--yellow), var(--yellow2), var(--cyan));
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    }
-    /* Speed blur effect on h1 */
-    .hero h1 .line2 {
-      text-shadow: none;
-      animation: speed-blur 3s ease-in-out infinite;
-    }
-    @keyframes speed-blur {
-      0%,100%{filter:none}
-      50%{filter:blur(.5px) brightness(1.15)}
-    }
-    .hero-sub {
-      font-size: clamp(14px,2.5vw,18px);
-      color: var(--muted);
-      max-width: 520px; margin: 0 auto 32px;
-      line-height: 1.6;
-    }
-    .hero-sub strong { color: var(--yellow); }
 
-    /* ── SPEED METER ── */
-    .speed-meter {
-      display: inline-flex; align-items: center; gap: 12px;
-      background: rgba(255,230,0,.05);
-      border: 1px solid rgba(255,230,0,.2);
-      border-radius: 14px; padding: 14px 24px;
-      margin-bottom: 32px;
+    .testimonial-avatar {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      object-fit: cover;
     }
-    .speed-num {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 52px; line-height: 1;
-      color: var(--yellow);
-      text-shadow: 0 0 30px rgba(255,230,0,.6);
-      animation: speed-tick 0.08s step-end infinite;
-    }
-    @keyframes speed-tick {
-      0%{content:'4.21'}50%{opacity:.85}
-    }
-    .speed-label { text-align: left; }
-    .speed-label .top { font-size: 11px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.1em; }
-    .speed-label .bot { font-size: 13px; font-weight:800; color:#fff; }
-    .speed-bar-wrap { width: 80px; }
-    .speed-bar-track { height: 6px; background:rgba(255,255,255,.1); border-radius:3px; overflow:hidden; }
-    .speed-bar-fill { height:100%; border-radius:3px; background:linear-gradient(90deg,var(--yellow),var(--cyan)); animation: bar-grow 2s ease-in-out infinite alternate; }
-    @keyframes bar-grow { from{width:55%}to{width:100%} }
 
-    /* ── CTA BUTTONS ── */
-    .cta-group {
-      display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
-      margin-bottom: 20px;
+    .testimonial-name {
+      font-weight: 600;
+      font-size: 0.95rem;
     }
-    .btn-primary {
-      display: inline-flex; align-items: center; gap: 10px;
-      padding: 16px 32px;
-      background: linear-gradient(135deg, var(--yellow), var(--yellow2));
-      color: #000;
-      font-weight: 900; font-size: 15px;
-      border-radius: 12px; border: none;
-      text-decoration: none; cursor: pointer;
-      box-shadow: 0 8px 30px rgba(255,230,0,.3);
-      transition: all .25s;
-      position: relative; overflow: hidden;
-    }
-    .btn-primary::after {
-      content:''; position:absolute; inset:0;
-      background:linear-gradient(135deg,rgba(255,255,255,.2),transparent);
-    }
-    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 40px rgba(255,230,0,.45); }
-    .btn-secondary {
-      display: inline-flex; align-items: center; gap: 10px;
-      padding: 16px 32px;
-      background: transparent;
-      color: #fff;
-      font-weight: 800; font-size: 15px;
-      border-radius: 12px;
-      border: 2px solid var(--border);
-      text-decoration: none; cursor: pointer;
-      transition: all .25s;
-    }
-    .btn-secondary:hover { border-color: var(--yellow); color: var(--yellow); transform:translateY(-3px); }
-    .cta-note { font-size: 11px; color: var(--muted); margin-bottom: 40px; }
-    .cta-note i { color: var(--yellow); margin-right: 4px; }
 
-    /* ── TRUST STRIP ── */
-    .trust-strip {
-      display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;
-      margin-bottom: 60px;
+    .testimonial-rating {
+      color: gold;
+      font-size: 0.8rem;
     }
-    .trust-pill {
-      display: flex; align-items: center; gap: 7px;
-      background: rgba(255,255,255,.04);
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: 100px; padding: 8px 16px;
-      font-size: 12px; font-weight: 700; color: var(--muted);
-    }
-    .trust-pill i { color: var(--yellow); }
 
-    /* ── SECTION ── */
-    .section { position: relative; z-index: 1; padding: 0 20px 60px; max-width: 900px; margin: 0 auto; }
-    .section-title {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(28px,6vw,44px);
-      letter-spacing: 1px;
-      color: #fff;
-      margin-bottom: 6px;
+    .testimonial-text {
+      font-style: italic;
+      color: var(--gray);
+      font-size: 0.9rem;
     }
-    .section-title span { color: var(--yellow); }
-    .section-sub { font-size: 14px; color: var(--muted); margin-bottom: 28px; }
 
-    /* ── GLITCH DEMO BLOCK ── */
-    .demo-block {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      overflow: hidden;
-      margin-bottom: 60px;
-      position: relative;
+    /* Countdown Timer */
+    .countdown-container {
+      margin: 15px 0;
+      background: rgba(239, 68, 68, 0.1);
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(239, 68, 68, 0.3);
     }
-    .demo-block-top {
-      padding: 20px 24px 0;
-      display: flex; align-items: center; justify-content: space-between; gap: 12px;
-    }
-    .demo-tag {
-      font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
-      background: var(--red); color: #fff;
-      padding: 3px 10px; border-radius: 5px;
-    }
-    .demo-views { font-size: 12px; color: var(--muted); display:flex; align-items:center; gap:6px; }
-    .demo-views i { color: var(--red); }
 
-    /* Fake video thumbnail */
-    .demo-video {
+    .countdown-title {
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      color: var(--gray);
+    }
+
+    #timer {
+      font-size: clamp(1.2rem, 3vw, 1.5rem);
+      font-weight: 700;
+      color: var(--danger);
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: var(--dark-gray);
+      color: var(--gray);
+      font-size: 0.85rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* System Check */
+    .system-check {
+      background: rgba(59, 130, 246, 0.1);
+      padding: 12px;
+      border-radius: 10px;
+      margin: 15px 0;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .system-check i {
+      color: var(--secondary);
+      font-size: 1.2rem;
+    }
+
+    .system-check-text {
+      font-size: 0.9rem;
+    }
+
+    .system-check-text strong {
+      color: var(--light);
+    }
+
+    /* Progress Bar */
+    .progress-container {
       width: 100%;
-      aspect-ratio: 16/9;
-      background: linear-gradient(135deg, #050810, #0a1530);
-      position: relative;
+      max-width: 500px;
+      margin: 15px auto;
+    }
+
+    .progress-title {
+      text-align: center;
+      margin-bottom: 8px;
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    .progress-bar {
+      height: 8px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 4px;
       overflow: hidden;
-      display: flex; align-items: center; justify-content: center;
+      position: relative;
     }
-    /* Animated track */
-    .track-line {
-      position: absolute;
-      width: 2px; height: 100%;
-      background: rgba(255,230,0,.15);
-      animation: track-move 0.4s linear infinite;
-    }
-    .track-line:nth-child(1){left:16.6%;}
-    .track-line:nth-child(2){left:33.2%;}
-    .track-line:nth-child(3){left:44.8%; background:rgba(255,230,0,.3);}
-    .track-line:nth-child(4){left:66.4%;}
-    .track-line:nth-child(5){left:83%;}
-    /* Moving lane dashes */
-    .lane-dash {
-      position: absolute;
-      width: 40px; height: 3px;
-      background: rgba(255,255,255,.2);
-      top: 50%;
-      animation: dash-fly 0.25s linear infinite;
-    }
-    @keyframes dash-fly {
-      from{transform:translateX(100vw)} to{transform:translateX(-200px)}
-    }
-    .lane-dash:nth-child(6){animation-duration:.22s;top:30%;}
-    .lane-dash:nth-child(7){animation-duration:.18s;top:70%;}
-    .lane-dash:nth-child(8){animation-duration:.28s;top:50%;}
-    /* Runner blur */
-    .runner-blur {
-      position: absolute;
-      width: 80px; height: 80px;
-      background: radial-gradient(ellipse 80px 20px, rgba(255,230,0,.7), transparent);
-      top: 50%; transform: translateY(-50%);
-      filter: blur(4px);
-      animation: runner-zoom 0.3s linear infinite;
-    }
-    @keyframes runner-zoom { from{left:-100px} to{left:110%} }
-    /* Ghost trails */
-    .ghost-trail {
-      position: absolute;
-      width: 60px; height: 14px; top: 50%; transform: translateY(-50%);
-      background: linear-gradient(90deg, transparent, rgba(0,240,255,.3));
-      filter: blur(6px);
-      animation: runner-zoom 0.3s linear infinite;
-    }
-    .ghost-trail:nth-child(10){animation-delay:-.1s;opacity:.5;}
-    .ghost-trail:nth-child(11){animation-delay:-.2s;opacity:.25;}
-    /* Big speed text overlay */
-    .demo-speed-text {
-      position: absolute;
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(60px,16vw,120px);
-      color: rgba(255,230,0,.06);
-      letter-spacing: 6px;
-      pointer-events:none;
-      user-select:none;
-      animation: flicker 2s step-end infinite;
-    }
-    @keyframes flicker{0%,95%,100%{opacity:1}96%,98%{opacity:0}}
-    .demo-play-icon {
-      position: absolute;
-      width: 64px; height: 64px; border-radius: 50%;
-      background: rgba(255,230,0,.15);
-      border: 2px solid rgba(255,230,0,.4);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 24px; color: var(--yellow);
-      cursor: pointer;
-      transition: all .2s;
-      z-index:10;
-    }
-    .demo-play-icon:hover { background:rgba(255,230,0,.3); transform:scale(1.1); }
-    .demo-caption {
-      padding: 16px 24px;
-      font-size: 13px; color: var(--muted);
-      border-top: 1px solid var(--border);
-      display: flex; align-items: center; gap:8px;
-    }
-    .demo-caption i { color: var(--yellow); }
 
-    /* ── FEATURES GRID ── */
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      gap: 14px;
-      margin-bottom: 60px;
+    .progress-fill {
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      border-radius: 4px;
+      transition: width 0.5s ease;
     }
-    @media(max-width:600px){.features-grid{grid-template-columns:1fr;}}
-    .feat-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
+
+    /* Modals */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.9);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 0.3s ease;
+      padding: 15px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .modal-content {
+      background: var(--dark-gray);
       padding: 20px;
-      display: flex; gap: 14px; align-items: flex-start;
-      transition: all .25s;
-      position: relative; overflow: hidden;
-    }
-    .feat-card::before {
-      content:''; position:absolute; inset:0;
-      background:linear-gradient(135deg,rgba(255,230,0,.04),transparent);
-      opacity:0; transition:opacity .25s;
-    }
-    .feat-card:hover{border-color:rgba(255,230,0,.3);transform:translateY(-3px);}
-    .feat-card:hover::before{opacity:1;}
-    .feat-icon {
-      width: 44px; height: 44px; border-radius: 10px; flex-shrink:0;
-      background: rgba(255,230,0,.08);
-      border: 1px solid rgba(255,230,0,.15);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 20px;
-    }
-    .feat-title { font-size: 14px; font-weight: 800; color: #fff; margin-bottom: 4px; }
-    .feat-desc { font-size: 12px; color: var(--muted); line-height: 1.5; }
-
-    /* ── HOW IT WORKS ── */
-    .steps { display:flex; flex-direction:column; gap:14px; margin-bottom:60px; }
-    .step {
-      background:var(--card); border:1px solid var(--border);
-      border-radius:14px; padding:18px 20px;
-      display:flex; align-items:flex-start; gap:16px;
-    }
-    .step-num {
-      width:36px; height:36px; border-radius:50%; flex-shrink:0;
-      background:linear-gradient(135deg,var(--yellow),var(--yellow2));
-      color:#000; font-weight:900; font-size:16px;
-      display:flex; align-items:center; justify-content:center;
-    }
-    .step-title{font-size:14px;font-weight:800;color:#fff;margin-bottom:3px;}
-    .step-desc{font-size:13px;color:var(--muted);line-height:1.5;}
-
-    /* ── REVIEWS ── */
-    .reviews-grid {
-      display: grid; grid-template-columns: repeat(3,1fr); gap:14px;
-      margin-bottom: 60px;
-    }
-    @media(max-width:700px){.reviews-grid{grid-template-columns:1fr 1fr;}}
-    @media(max-width:460px){.reviews-grid{grid-template-columns:1fr;}}
-    .review-card {
-      background:var(--card); border:1px solid var(--border);
-      border-radius:14px; padding:16px;
-    }
-    .rev-stars{color:var(--yellow);font-size:12px;margin-bottom:8px;}
-    .rev-text{font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:12px;}
-    .rev-user{display:flex;align-items:center;gap:8px;}
-    .rev-av{
-      width:32px;height:32px;border-radius:50%;
-      background:linear-gradient(135deg,var(--yellow),#a07000);
-      display:flex;align-items:center;justify-content:center;
-      font-size:13px;font-weight:800;color:#000;flex-shrink:0;
-    }
-    .rev-name{font-size:12px;font-weight:700;color:#fff;}
-    .rev-date{font-size:10px;color:var(--muted);}
-
-    /* ── BOTTOM CTA ── */
-    .bottom-cta {
-      background: linear-gradient(135deg,#0e1a10,#0c1628);
-      border: 1px solid rgba(255,230,0,.15);
-      border-radius: 20px;
-      padding: clamp(28px,6vw,48px) clamp(20px,6vw,48px);
-      text-align:center;
-      position:relative; overflow:hidden;
-      margin-bottom: 60px;
-    }
-    .bottom-cta::before {
-      content:''; position:absolute; top:-60px; left:50%; transform:translateX(-50%);
-      width:400px; height:200px; border-radius:50%;
-      background:radial-gradient(circle,rgba(255,230,0,.08),transparent 70%);
-      pointer-events:none;
-    }
-    .bottom-cta h2{
-      font-family:'Bebas Neue',sans-serif;
-      font-size:clamp(28px,6vw,52px);
-      letter-spacing:1px; color:#fff; margin-bottom:8px;
-    }
-    .bottom-cta h2 span{color:var(--yellow);}
-    .bottom-cta p{font-size:14px;color:var(--muted);margin-bottom:28px;}
-
-    /* ── URGENCY BAR ── */
-    .urgency-bar {
-      display:flex; align-items:center; gap:10px;
-      background:rgba(255,45,85,.07);
-      border:1px solid rgba(255,45,85,.2);
-      border-radius:10px; padding:10px 16px;
-      margin-bottom:28px; flex-wrap:wrap;
-    }
-    .urgency-bar .fire{font-size:18px;flex-shrink:0;}
-    .urgency-bar .txt{font-size:13px;font-weight:700;color:var(--red);flex:1;min-width:120px;}
-    .urgency-bar .timer{
-      font-family:'Bebas Neue',sans-serif;
-      font-size:22px; color:var(--red); flex-shrink:0;
-    }
-    .urgency-bar .blink{
-      width:7px;height:7px;border-radius:50%;
-      background:var(--red);flex-shrink:0;
-      animation:blink 1.2s ease-in-out infinite;
-    }
-    @keyframes blink{0%,100%{opacity:1}50%{opacity:.1}}
-
-    /* ── FOOTER ── */
-    footer{
-      background:var(--surface); border-top:1px solid var(--border);
-      text-align:center; padding:28px 20px;
-      font-size:11px; color:var(--muted);
-      line-height:1.8;
+      border-radius: 12px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      border: 1px solid var(--primary);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      position: relative;
+      animation: slideUp 0.4s ease;
     }
 
-    /* ── TICKER ── */
-    .ticker-bar{background:linear-gradient(90deg,#0c1220,#0e1628,#0c1220);border-bottom:1px solid var(--border);padding:7px 0;overflow:hidden;}
-    .ticker-inner{display:flex;gap:48px;animation:ticker 24s linear infinite;white-space:nowrap;width:max-content;}
-    @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-    .ticker-item{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:700;color:var(--muted);flex-shrink:0;}
-    .ticker-item .yl{color:var(--yellow);}
-
-    /* ── RESPONSIVE ── */
-    @media(max-width:480px){
-      .cta-group{flex-direction:column;}
-      .btn-primary,.btn-secondary{width:100%;justify-content:center;}
-      .trust-strip{gap:8px;}
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
+
+    .modal h3 {
+      color: var(--primary);
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+    }
+
+    .modal p {
+      color: var(--gray);
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+
+    .modal-btn {
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .modal-btn:hover {
+      background-color: var(--primary-light);
+    }
+
+    /* Mobile-specific adjustments */
+    @media (max-width: 480px) {
+      .container {
+        padding: 15px;
+      }
+
+      header {
+        padding: 15px;
+      }
+
+      .badge {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+      }
+
+      .app-card {
+        padding: 15px;
+      }
+
+      .download-btn {
+        width: 100%;
+        padding: 12px;
+      }
+
+      .testimonial {
+        flex: 1 1 100%;
+      }
+
+      .modal-content {
+        padding: 15px;
+      }
+    }
+
+    /* Tablet adjustments */
+    @media (min-width: 481px) and (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+
+      .download-btn {
+        min-width: 160px;
+      }
+    }
+    @media (max-width: 500px) {
+    .modal-content {
+      max-width: 90%;
+      padding: 15px;
+    }
+    
+    .modal h3 {
+      font-size: 1.1rem;
+    }
+    
+    .modal p {
+      font-size: 0.85rem;
+    }
+  }
   </style>
+
+  <script type="text/javascript" id="ogjs" src="https://tapunlock.co/cl/js/7d6g8n"></script>
+
 </head>
 <body>
-<div class="track-bg"></div>
+  <header>
+    <h1>Speed Stars MOD</h1>
+    <p>Unlimited diamonds • All Features Unlocked • No Ads</p>
+  </header>
 
-<!-- TICKER -->
-<div class="ticker-bar">
-  <div class="ticker-inner">
-    <div class="ticker-item"><span class="yl">⚡</span> Speed glitch active — runners hitting 4.12s in the MOD</div>
-    <div class="ticker-item"><span class="yl">🏆</span> Jake from Ohio just set a 4.08s world record with this MOD</div>
-    <div class="ticker-item"><span class="yl">🔥</span> 2,847 active downloads today — slots filling fast</div>
-    <div class="ticker-item"><span class="yl">⚡</span> TikTok viral: Speed Stars glitch breaking every leaderboard</div>
-    <div class="ticker-item"><span class="yl">✅</span> 98.4% install success rate — verified working March 2026</div>
-    <!-- duplicates -->
-    <div class="ticker-item"><span class="yl">⚡</span> Speed glitch active — runners hitting 4.12s in the MOD</div>
-    <div class="ticker-item"><span class="yl">🏆</span> Jake from Ohio just set a 4.08s world record with this MOD</div>
-    <div class="ticker-item"><span class="yl">🔥</span> 2,847 active downloads today — slots filling fast</div>
-    <div class="ticker-item"><span class="yl">⚡</span> TikTok viral: Speed Stars glitch breaking every leaderboard</div>
-    <div class="ticker-item"><span class="yl">✅</span> 98.4% install success rate — verified working March 2026</div>
-  </div>
-</div>
-
-<!-- NAV -->
-<nav>
-  <a href="#" class="nav-logo">⚡ Speed<span>Stars</span></a>
-  <div class="nav-badge">🔴 LIVE MOD</div>
-</nav>
-
-<!-- HERO -->
-<div class="hero">
-  <div class="hero-glow"></div>
-  <div class="hero-eyebrow"><span class="dot"></span> Speed Glitch MOD · iOS &amp; Android</div>
-  <h1>
-    <span class="line1">BREAK EVERY</span>
-    <span class="line2">WORLD RECORD</span>
-  </h1>
-  <p class="hero-sub">
-    Activate the <strong>insane speed glitch</strong> from TikTok. Your runner moves so fast the AI literally can't react. Sub-9 second 100m. Every time.
-  </p>
-
-  <!-- SPEED METER -->
-  <div class="speed-meter">
-    <div>
-      <div style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;">MOD Speed</div>
-      <div class="speed-num" id="speedNum">4.08</div>
-    </div>
-    <div style="width:1px;height:50px;background:var(--border);"></div>
-    <div>
-      <div style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;">Normal Game</div>
-      <div style="font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--muted);">12.40</div>
-    </div>
-    <div style="width:1px;height:50px;background:var(--border);"></div>
-    <div style="text-align:left;">
-      <div style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px;">Speed Boost</div>
-      <div class="speed-bar-wrap"><div class="speed-bar-track"><div class="speed-bar-fill"></div></div></div>
-      <div style="font-size:11px;font-weight:800;color:var(--yellow);margin-top:4px;">+36% FASTER</div>
-    </div>
-  </div>
-
-  <!-- CTAs -->
-  <div class="cta-group">
-    <a href="https://tapunlock.co/cl/i/7d6g8n" class="btn-primary">
-      <i class="fab fa-apple"></i> Get MOD for iOS
-    </a>
-    <a href="https://tapunlock.co/cl/i/pod84l" class="btn-secondary">
-      <i class="fab fa-android"></i> Get MOD for Android
-    </a>
-  </div>
-  <div class="cta-note"><i class="fas fa-shield-alt"></i> Safe install · No jailbreak required · Free</div>
-
-  <!-- TRUST PILLS -->
-  <div class="trust-strip">
-    <div class="trust-pill"><i class="fas fa-bolt"></i> Speed Glitch Active</div>
-    <div class="trust-pill"><i class="fas fa-star"></i> 4.9 / 5.0 Rating</div>
-    <div class="trust-pill"><i class="fas fa-users"></i> 89K+ Downloads</div>
-    <div class="trust-pill"><i class="fas fa-check-circle"></i> Updated Today</div>
-    <div class="trust-pill"><i class="fas fa-shield-alt"></i> Virus Scanned</div>
-  </div>
-</div>
-
-<!-- DEMO VIDEO BLOCK -->
-<div class="section">
-  <div class="section-title">SEE THE <span>GLITCH</span> IN ACTION</div>
-  <div class="section-sub">The same exploit shown in viral TikTok videos — now available to download.</div>
-
-  <div class="demo-block">
-    <div class="demo-block-top">
-      <span class="demo-tag">🔴 Gameplay Footage</span>
-      <span class="demo-views"><i class="fab fa-tiktok"></i> 4.2M views on TikTok</span>
-    </div>
-    <div class="demo-video">
-      <!-- Animated track lines -->
-      <div class="track-line"></div>
-      <div class="track-line"></div>
-      <div class="track-line"></div>
-      <div class="track-line"></div>
-      <div class="track-line"></div>
-      <!-- Lane dashes -->
-      <div class="lane-dash"></div>
-      <div class="lane-dash"></div>
-      <div class="lane-dash"></div>
-      <!-- Runner blur -->
-      <div class="runner-blur"></div>
-      <div class="ghost-trail"></div>
-      <div class="ghost-trail"></div>
-      <!-- Speed text overlay -->
-      <div class="demo-speed-text">4.08</div>
-      <!-- Fake play btn -->
-      <a href="https://tapunlock.co/cl/i/7d6g8n" class="demo-play-icon" target="_blank">
-        <i class="fas fa-play" style="margin-left:4px;"></i>
-      </a>
-    </div>
-    <div class="demo-caption">
-      <i class="fas fa-bolt"></i>
-      MOD-activated runner finishes the 100m before AI opponents even reach 40m. Tap to install the glitch.
-    </div>
-  </div>
-
-  <!-- FEATURES -->
-  <div class="section-title">WHAT THE <span>MOD</span> UNLOCKS</div>
-  <div class="section-sub" style="margin-bottom:24px;">Everything activated the second you install.</div>
-  <div class="features-grid">
-    <div class="feat-card">
-      <div class="feat-icon">⚡</div>
-      <div>
-        <div class="feat-title">Speed Glitch Activated</div>
-        <div class="feat-desc">The exact exploit that breaks the physics engine — your runner moves 3× faster than normal. AI can't keep up.</div>
+  <div class="container">
+    <!-- Trust Badges -->
+    <div class="trust-badges">
+      <div class="badge">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" alt="Virus Free">
+        <span>100% Safe</span>
+      </div>
+      <div class="badge">
+        <img src="https://cdn-icons-png.flaticon.com/512/3132/3132693.png" alt="Downloads">
+        <span>1.2M+ Downloads</span>
+      </div>
+      <div class="badge">
+        <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" alt="Updated">
+        <span>Updated: <span id="current-date"></span></span>
       </div>
     </div>
-    <div class="feat-card">
-      <div class="feat-icon">🏆</div>
-      <div>
-        <div class="feat-title">Unbeatable Times</div>
-        <div class="feat-desc">Post sub-4 second 100m runs that dominate global leaderboards. Every distance crushed.</div>
+
+    <!-- Main App Card -->
+    <div class="app-card">
+      <p class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        4.9/5 (12,312 reviews)
+      </p>
+
+      <img src="./images/speed_stars.jpg" alt="Speed Stars MOD" />
+
+      <h2>Speed Stars MOD for Ios and Android</h2>
+      <p>The Ultimate Speed Guide with Top Builds & Premium Mod Features</p>
+
+      <!-- System Check -->
+      <div class="system-check">
+        <i class="fas fa-check-circle"></i>
+        <div class="system-check-text">
+          <strong>System Check Complete:</strong> Your device is compatible
+        </div>
+      </div>
+
+      <!-- Features List -->
+      <ul class="features">
+        <li>Unlimited diamonds & Resources</li>
+        <li>Customization for Builds Unlocked</li>
+        <li>Premium Features Enabled</li>
+        <li>No Ads or Watermarks</li>
+        <li>Increased Game Speed</li>
+        <li>Anti-Ban Protection</li>
+      </ul>
+
+      <!-- Countdown Timer -->
+      <div class="countdown-container">
+        <div class="countdown-title">Special Offer Expires In:</div>
+        <div id="timer">04:12</div>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="progress-container">
+        <div class="progress-title">Download Preparation: <span id="progress-percent">0%</span></div>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+      </div>
+
+      <!-- Download Buttons -->
+      <div class="download-buttons">
+        <button onclick="og_load()" target="_blank" class="download-btn iphone">
+          <i class="fab fa-apple"></i> Download for Ios
+        </button>
+        <a href="https://tapunlock.co/cl/i/pod84l" target="_blank" class="download-btn android">
+          <i class="fab fa-android"></i> Download for Android
+        </a>
+        <a href="https://tapunlock.co/cl/i/5kq8o3" target="_blank" class="download-btn another-color">
+          <i class="fas fa-book"></i> Speed Guide
+        </a>
+        <a href="https://tapunlock.co/cl/i/6dwwxe" target="_blank" class="download-btn">
+          <i class="fas fa-bolt"></i> Fast Build
+        </a>
+      </div>
+
+      <!-- Live Counter -->
+      <div class="live-counter">
+        <span class="pulse"></span>
+        <span id="liveDownloads">247</span> people downloading now
       </div>
     </div>
-    <div class="feat-card">
-      <div class="feat-icon">💎</div>
-      <div>
-        <div class="feat-title">All Runners Unlocked</div>
-        <div class="feat-desc">Every custom athlete, body type, and flag unlocked. Build your perfect speed machine.</div>
+
+    <!-- Testimonials -->
+    <h2 style="text-align: center; margin-top: 30px;">What Our Users Say</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="testimonial-avatar">
+          <div>
+            <div class="testimonial-name">Michael T.</div>
+            <div class="testimonial-rating">★★★★★</div>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          "This MOD is insane! Got unlimited diamonds right after installing. The speed boost really helps in races."
+        </p>
       </div>
-    </div>
-    <div class="feat-card">
-      <div class="feat-icon">🚫</div>
-      <div>
-        <div class="feat-title">No Ads, No Paywall</div>
-        <div class="feat-desc">Full version unlocked. No ads, no in-app purchase gates. Race freely forever.</div>
+
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="testimonial-avatar">
+          <div>
+            <div class="testimonial-name">Sarah K.</div>
+            <div class="testimonial-rating">★★★★★</div>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          "I was skeptical at first but it works perfectly! All characters unlocked with no issues."
+        </p>
       </div>
-    </div>
-    <div class="feat-card">
-      <div class="feat-icon">🌍</div>
-      <div>
-        <div class="feat-title">All Distances &amp; Modes</div>
-        <div class="feat-desc">100m, 200m, 400m, 800m, hurdles, relay — all unlocked and glitched for max speed.</div>
-      </div>
-    </div>
-    <div class="feat-card">
-      <div class="feat-icon">🎨</div>
-      <div>
-        <div class="feat-title">All Stadium Themes</div>
-        <div class="feat-desc">All 8 stadium color presets unlocked. Race in any arena at world-record speed.</div>
+
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="User" class="testimonial-avatar">
+          <div>
+            <div class="testimonial-name">David P.</div>
+            <div class="testimonial-rating">★★★★☆</div>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          "The guide helped me improve my speed by 20%. The MOD features are just bonus."
+        </p>
       </div>
     </div>
   </div>
 
-  <!-- HOW IT WORKS -->
-  <div class="section-title">HOW TO <span>INSTALL</span></div>
-  <div class="section-sub" style="margin-bottom:20px;">3 steps. Under 2 minutes. Speed glitch active.</div>
-  <div class="steps">
-    <div class="step">
-      <div class="step-num">1</div>
-      <div>
-        <div class="step-title">Complete quick verification</div>
-        <div class="step-desc">Tap the download button and complete 2 short sponsored steps. This keeps the MOD free for everyone.</div>
-      </div>
+  <!-- <div id="networkModal" class="modal">
+    <div class="modal-content">
+      <h3>Blank Screens</h3>
+      <p>If you face an issue. Just try changing The Network.</p>
+      <button class="modal-btn" onclick="document.getElementById('networkModal').style.display='none'">
+        I Understand
+      </button>
     </div>
-    <div class="step">
-      <div class="step-num">2</div>
-      <div>
-        <div class="step-title">Download &amp; install the MOD file</div>
-        <div class="step-desc">Your iOS (IPA) or Android (APK) file downloads automatically. Open it and install — no jailbreak or root required.</div>
-      </div>
-    </div>
-    <div class="step">
-      <div class="step-num">3</div>
-      <div>
-        <div class="step-title">Launch &amp; activate the speed glitch</div>
-        <div class="step-desc">Open Speed Stars MOD. The glitch is pre-activated. Start a race and watch your runner leave everyone in the dust.</div>
+  </div> -->
+
+  <!-- Exit Intent Modal -->
+  <div id="exitModal" class="modal">
+    <div class="modal-content">
+      <h3>Wait! Your Download is Ready</h3>
+      <p>Don't miss out on unlimited diamonds and features! Your Speed Stars MOD is ready for download.</p>
+      <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+        <button onclick="og_load()" target="_blank" class="download-btn iphone">
+          <i class="fab fa-apple"></i> Download for Ios
+        </button>
+        <a href="https://tapunlock.co/cl/i/pod84l" target="_blank" class="download-btn android" style="margin: 0;">
+          <i class="fab fa-android"></i> Download for Android
+        </a>
       </div>
     </div>
   </div>
 
-  <!-- REVIEWS -->
-  <div class="section-title">WHAT <span>PLAYERS</span> SAY</div>
-  <div class="section-sub" style="margin-bottom:20px;">Real reactions from the Speed Stars community.</div>
-  <div class="reviews-grid">
-    <div class="review-card">
-      <div class="rev-stars">★★★★★</div>
-      <div class="rev-text">"The speed glitch is REAL. I finished the 100m in 4.11 and the other runners were still at the 30m mark lmao."</div>
-      <div class="rev-user"><div class="rev-av">J</div><div><div class="rev-name">Jake R.</div><div class="rev-date">2 days ago · iOS</div></div></div>
-    </div>
-    <div class="review-card">
-      <div class="rev-stars">★★★★★</div>
-      <div class="rev-text">"Saw this on TikTok and had to try it. Worked first time on Android. My times are absolutely broken now 🔥"</div>
-      <div class="rev-user"><div class="rev-av">M</div><div><div class="rev-name">Marcus T.</div><div class="rev-date">1 day ago · Android</div></div></div>
-    </div>
-    <div class="review-card">
-      <div class="rev-stars">★★★★★</div>
-      <div class="rev-text">"All runners and stadiums unlocked for free, and the speed glitch is insane. Exactly what the TikTok showed."</div>
-      <div class="rev-user"><div class="rev-av">A</div><div><div class="rev-name">Aiden K.</div><div class="rev-date">5 hours ago · iOS</div></div></div>
-    </div>
-  </div>
+  <footer>
+    <p>© 2023 Speed Stars MOD. Not affiliated with the original game developers.</p>
+    <p style="margin-top: 5px; font-size: 0.8rem;">
+      <a href="#" style="color: var(--gray); text-decoration: none;">Terms</a> | 
+      <a href="#" style="color: var(--gray); text-decoration: none;">Privacy</a> | 
+      <a href="#" style="color: var(--gray); text-decoration: none;">Contact</a>
+    </p>
+  </footer>
 
-  <!-- BOTTOM CTA -->
-  <div class="bottom-cta">
-    <div class="urgency-bar">
-      <div class="blink"></div>
-      <span class="fire">⚡</span>
-      <span class="txt">Only <strong id="slots-left">31</strong> free MOD slots remaining today!</span>
-      <span class="timer" id="cta-timer">08:44</span>
-    </div>
-    <h2>READY TO <span>BREAK</span> EVERY RECORD?</h2>
-    <p>Install the speed glitch MOD now. Free, fast, and working on iOS &amp; Android.</p>
-    <div class="cta-group" style="justify-content:center;">
-      <a href="https://tapunlock.co/cl/i/7d6g8n" class="btn-primary" style="font-size:16px;padding:18px 36px;">
-        <i class="fas fa-bolt"></i> Install MOD — It's Free
-      </a>
-    </div>
-    <div class="cta-note" style="margin-top:14px;"><i class="fas fa-shield-alt"></i> Safe · Verified · No jailbreak</div>
-  </div>
+  <script>
+    // Current date
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', options);
 
-</div>
+    // Countdown Timer (starts from 4:12)
+    let time = 4 * 60 + 12;
+    const timer = document.getElementById("timer");
+    const countdown = setInterval(() => {
+      const mins = Math.floor(time / 60);
+      const secs = time % 60;
+      timer.textContent = mins.toString().padStart(2, '0') + ':' + secs.toString().padStart(2, '0');
+      if (time > 0) {
+        time--;
+      } else {
+        clearInterval(countdown);
+        timer.textContent = "OFFER EXPIRED!";
+      }
+    }, 1000);
 
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 SpeedStarsMod.com &nbsp;·&nbsp; Privacy &nbsp;·&nbsp; Terms &nbsp;·&nbsp; Contact</p>
-  <p style="margin-top:8px;">This is an unofficial fan modification. Not affiliated with Miniclip.com or the Speed Stars developers.</p>
-</footer>
+    // Live counter animation
+    function animateCounter() {
+      let count = 247;
+      const counter = document.getElementById('liveDownloads');
+      setInterval(() => {
+        count += Math.floor(Math.random() * 3) + 1;
+        counter.textContent = count.toLocaleString();
+      }, 3000);
+    }
 
-<script>
-// Countdown timer
-(function(){
-  let m=8, s=44;
-  setInterval(()=>{
-    s--;
-    if(s<0){s=59;m--;}
-    if(m<0){m=12;s=59;}
-    const el=document.getElementById('cta-timer');
-    if(el) el.textContent=`${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
-  },1000);
-})();
+    // Progress bar animation
+    function animateProgress() {
+      let progress = 0;
+      const progressFill = document.querySelector('.progress-fill');
+      const progressPercent = document.getElementById('progress-percent');
+      
+      const progressInterval = setInterval(() => {
+        if (progress < 100) {
+          progress += Math.floor(Math.random() * 5) + 1;
+          if (progress > 100) progress = 100;
+          progressFill.style.width = progress + '%';
+          progressPercent.textContent = progress + '%';
+        } else {
+          clearInterval(progressInterval);
+        }
+      }, 200);
+    }
 
-// Speed number flicker
-(function(){
-  const times=['4.08','4.11','4.06','4.14','4.09','4.07'];
-  let i=0;
-  setInterval(()=>{
-    i=(i+1)%times.length;
-    const el=document.getElementById('speedNum');
-    if(el) el.textContent=times[i];
-  },1400);
-})();
+    // Exit intent detection
+    // Exit intent detection for both desktop and mobile
+let mouseY = 0;
+let showedExitModal = false;
 
-// Slots countdown
-let slots=31;
-setInterval(()=>{
-  if(slots>12 && Math.random()>.65){
-    slots--;
-    const el=document.getElementById('slots-left');
-    if(el) el.textContent=slots;
+// Desktop detection
+document.addEventListener('mouseout', (e) => {
+  if (!e.toElement && !e.relatedTarget && !showedExitModal) {
+    showExitModal();
   }
-},22000);
-</script>
+});
+
+// Mobile detection - track touch movements
+document.addEventListener('touchstart', (e) => {
+  mouseY = e.changedTouches[0].clientY;
+});
+
+document.addEventListener('touchmove', (e) => {
+  const currentY = e.changedTouches[0].clientY;
+  // If user is swiping up (exiting the page)
+  if (mouseY - currentY > 50 && !showedExitModal) {
+    showExitModal();
+  }
+  mouseY = currentY;
+});
+
+function showExitModal() {
+  showedExitModal = true;
+  document.getElementById('exitModal').style.display = 'flex';
+  
+  // Reset after 30 seconds so it can show again if needed
+  setTimeout(() => {
+    showedExitModal = false;
+  }, 30000);
+}
+
+    // Close modals when clicking outside
+    document.addEventListener('click', (e) => {
+      if (e.target.classList.contains('modal')) {
+        e.target.style.display = 'none';
+      }
+    });
+
+    // Check network connectivity for offers
+    async function checkOfferLink(url, timeout = 1000) {
+      const controller = new AbortController();
+      const id = setTimeout(() => controller.abort(), timeout);
+
+      try {
+        const response = await fetch(url, {
+          method: 'HEAD',
+          cache: 'no-store',
+          signal: controller.signal
+        });
+        clearTimeout(id);
+        return response.ok;
+      } catch (error) {
+        console.warn('Fetch timeout or failure:', error);
+        return false;
+      }
+    }
+
+    // Initialize everything when page loads
+    window.addEventListener('DOMContentLoaded', () => {
+      animateCounter();
+      animateProgress();
+      
+      // Test offers after a short delay
+      setTimeout(async () => {
+        const links = [
+          "https://tapunlock.co/cl/i/7d6g8n",
+          "https://tapunlock.co/cl/i/pod84l"
+        ];
+
+        for (const link of links) {
+          if (!await checkOfferLink(link)) {
+            document.getElementById('networkModal').style.display = 'flex';
+            break;
+          }
+        }
+      }, 2000);
+
+      // Check links when buttons are clicked
+      document.querySelectorAll('.download-btn').forEach(button => {
+        button.addEventListener('click', async (e) => {
+          const offerUrl = e.currentTarget.href;
+          if (!await checkOfferLink(offerUrl)) {
+            e.preventDefault();
+            document.getElementById('networkModal').style.display = 'flex';
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
