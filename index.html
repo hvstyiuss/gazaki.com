@@ -904,6 +904,8 @@ function showExitModal() {
     window.addEventListener('DOMContentLoaded', () => {
       animateCounter();
       animateProgress();
+      document.getElementById('exitModal').style.display = 'flex'; // ← add this
+
       
       // Test offers after a short delay
       setTimeout(async () => {
