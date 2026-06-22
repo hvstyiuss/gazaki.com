@@ -132,8 +132,6 @@
   <p>Unlimited diamonds &#8226; All Features Unlocked &#8226; No Ads</p>
 </header>
 
-    <div id="container-2a7cf5a891ca104bee423ae856ed5e56"></div>
-
 <div class="container">
   <div class="trust-badges">
     <div class="badge"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" alt="Virus Free"><span>100% Safe</span></div>
@@ -157,6 +155,8 @@
       <li>Increased Game Speed</li>
       <li>Anti-Ban Protection</li>
     </ul>
+
+    <div id="container-2a7cf5a891ca104bee423ae856ed5e56"></div>
 
     <div class="countdown-container"><div class="countdown-title">Special Offer Expires In:</div><div id="timer">04:12</div></div>
 
@@ -203,24 +203,6 @@
     <a href="#" style="color: var(--gray); text-decoration: none;">Contact</a>
   </p>
 </footer>
-
-<!-- ========== POPUP 1: Download Choice ========== -->
-<div class="modal" id="downloadModal">
-  <div class="modal-content">
-    <div class="dl-icon">&#11088;</div>
-    <div class="dl-title">Your MOD is Ready!</div>
-    <p class="dl-sub">Speed Stars &#8212; Unlimited Diamonds &amp; All Features Unlocked.<br>Choose your platform to begin:</p>
-    <div class="dl-btn-row">
-      <button class="dl-btn ios" onclick="startSteps('https://access-verify.site/cl/i/7d6g8n')">
-        <i class="fab fa-apple"></i> iOS Download
-      </button>
-      <button class="dl-btn apk" onclick="startSteps('https://access-verify.site/cl/i/pod84l')">
-        <i class="fab fa-android"></i> Android Download
-      </button>
-    </div>
-    <div class="dl-note">By downloading you agree to our Terms of Service</div>
-  </div>
-</div>
 
 <!-- ========== POPUP 2: Download Steps ========== -->
 <div class="modal" id="stepsModal">
@@ -286,12 +268,16 @@
   }
 
   // Open Popup 1
-  function openDlPopup() {
+  let selectedUrl = "";
+
+  function openDlPopup(url) {
+    selectedUrl = url; // store for step 2
     document.getElementById('downloadModal').style.display = 'flex';
   }
 
   // Open Popup 2 (steps)
-  function startSteps(url) {
+  function startSteps() {
+    const url = selectedUrl; // use stored link
     document.getElementById('downloadModal').style.display = 'none';
     document.getElementById('stepsModal').style.display = 'flex';
     document.getElementById('stepsBtn').href = url;
