@@ -428,6 +428,140 @@ body:before{
   .search-button svg{margin:0}
   .platforms{grid-template-columns:1fr}
 }
+/* ===== CPA POPUP ===== */
+.cpa-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, .78);
+  backdrop-filter: blur(10px);
+  animation: fadeIn .2s ease;
+}
+
+.cpa-overlay.active {
+  display: flex;
+}
+
+.cpa-modal {
+  width: min(430px, 100%);
+  position: relative;
+  padding: 30px 25px 25px;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(24,201,138,.10), transparent 40%),
+    #10151d;
+  box-shadow: 0 30px 90px rgba(0,0,0,.65);
+  text-align: center;
+  animation: modalIn .25s ease;
+}
+
+.cpa-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255,255,255,.07);
+  color: #aab3c0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cpa-close:hover {
+  background: rgba(255,255,255,.12);
+  color: #fff;
+}
+
+.cpa-icon {
+  width: 72px;
+  height: 72px;
+  margin: 5px auto 18px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.1);
+  box-shadow: 0 12px 30px rgba(0,0,0,.4);
+}
+
+.cpa-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cpa-title {
+  color: #f4f7fb;
+  font: 600 25px "Playfair Display", serif;
+  margin-bottom: 10px;
+}
+
+.cpa-text {
+  color: #8490a0;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.cpa-platform {
+  display: inline-block;
+  padding: 7px 13px;
+  margin-bottom: 18px;
+  border-radius: 20px;
+  background: rgba(24,201,138,.12);
+  color: #18c98a;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.cpa-continue {
+  width: 100%;
+  min-height: 52px;
+  border: 0;
+  border-radius: 14px;
+  background: linear-gradient(100deg, #168ac4, #7b3fe5);
+  color: #fff;
+  font: 700 15px "DM Sans", sans-serif;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(93,72,224,.25);
+  transition: transform .15s, filter .15s;
+}
+
+.cpa-continue:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+.cpa-continue:active {
+  transform: scale(.98);
+}
+
+.cpa-note {
+  margin-top: 13px;
+  color: #5f6b7b;
+  font-size: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px) scale(.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 </style>
 </head>
 
@@ -486,7 +620,40 @@ body:before{
     Try another game name.
   </div>
 </main>
+<!-- CPA POPUP -->
+<div class="cpa-overlay" id="cpaOverlay">
+  <div class="cpa-modal">
 
+    <button class="cpa-close" id="cpaClose" aria-label="Close">
+      ×
+    </button>
+
+    <div class="cpa-icon">
+      <img id="cpaGameImage" src="" alt="">
+    </div>
+
+    <div class="cpa-title" id="cpaGameName">
+      Download Game
+    </div>
+
+    <div class="cpa-platform" id="cpaPlatform">
+      Android
+    </div>
+
+    <p class="cpa-text">
+      Your download is ready. Click the button below to continue.
+    </p>
+
+    <button class="cpa-continue" id="cpaContinue">
+      Continue to Download
+    </button>
+
+    <div class="cpa-note">
+      You will be redirected to the download page.
+    </div>
+
+  </div>
+</div>
 <script>
 const GAMES = [
 
@@ -833,9 +1000,13 @@ function renderGames(list) {
       </div>
     `;
 
-    card.querySelector(".ios").addEventListener("click", () => goToDownload(game.iosUrl));
-    card.querySelector(".android").addEventListener("click", () => goToDownload(game.androidUrl));
+    card.querySelector(".ios").addEventListener("click", () => {
+  openCpaPopup(game, "iOS", game.iosUrl);
+});
 
+card.querySelector(".android").addEventListener("click", () => {
+  openCpaPopup(game, "Android", game.androidUrl);
+});
     grid.appendChild(card);
   });
 }
@@ -853,11 +1024,58 @@ function filterGames(query) {
   );
 }
 
-function goToDownload(url) {
+let pendingDownloadUrl = null;
+
+const cpaOverlay = document.getElementById("cpaOverlay");
+const cpaClose = document.getElementById("cpaClose");
+const cpaContinue = document.getElementById("cpaContinue");
+const cpaGameName = document.getElementById("cpaGameName");
+const cpaGameImage = document.getElementById("cpaGameImage");
+const cpaPlatform = document.getElementById("cpaPlatform");
+
+function openCpaPopup(game, platform, url) {
   if (!url || url === "#") return;
-  window.location.href = url;
+
+  pendingDownloadUrl = url;
+
+  cpaGameName.textContent = game.name;
+  cpaGameImage.src = game.img;
+  cpaGameImage.alt = game.name;
+  cpaPlatform.textContent = platform;
+
+  cpaOverlay.classList.add("active");
+  document.body.style.overflow = "hidden";
 }
 
+function closeCpaPopup() {
+  cpaOverlay.classList.remove("active");
+  document.body.style.overflow = "";
+  pendingDownloadUrl = null;
+}
+
+cpaContinue.addEventListener("click", () => {
+  if (!pendingDownloadUrl) return;
+
+  const url = pendingDownloadUrl;
+
+  closeCpaPopup();
+
+  window.location.href = url;
+});
+
+cpaClose.addEventListener("click", closeCpaPopup);
+
+cpaOverlay.addEventListener("click", (event) => {
+  if (event.target === cpaOverlay) {
+    closeCpaPopup();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeCpaPopup();
+  }
+});
 searchInput.addEventListener("input", () => filterGames(searchInput.value));
 
 searchButton.addEventListener("click", () => {
